@@ -29,21 +29,21 @@
       "id": "BRQU",
       "title": "BRQU (BrowserQuest Updated)",
       "description": "Reimplementation of a legacy multiplayer browser game that was no longer functional, featuring a failover system and server management through Nginx.",
-      "imageSrc": "images\\Browserquest.webp",
+      "imageSrc": "/images/Browserquest.webp",
       "url": "https://github.com/AkaTFL/BRQU"
     },
     {
       "id": "Park-IA",
       "title": "Park-IA",
       "description": "AI-powered parking assistant that analyzes real-time CCTV footage to detect available spots and suggest the closest parking areas to a user's destination.",
-      "imageSrc": "images\\Park-IA.webp",
+      "imageSrc": "/images/Park-IA.webp",
       "url": "https://github.com/AkaTFL/Park-IA"
     },
     {
       "id": "Fyt",
       "title": "Fyt",
       "description": "A rudimentary Python-based system similar to Gyt, featuring a command that rickrolls you and puts your computer to sleep 😆.",
-      "imageSrc": "images\\Fyt.webp",
+      "imageSrc": "/images/Fyt.webp",
       "url": "https://github.com/Freeky-inc/hetic_git"
     },
     {
