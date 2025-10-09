@@ -17,6 +17,14 @@ const Header = ({ handleWorkScroll, handleContactScroll, isBlog }) => {
     setMounted(true);
   }, []);
 
+  const headerClasses = [
+    "mt-10 hidden flex-row items-center justify-between sticky top-0 z-10 tablet:flex",
+    "dark:text-white",
+    mounted && theme === "light" && "bg-white",
+  ]
+    .filter(Boolean)
+    .join(" ");
+
   return (
     <>
       <Popover className="block tablet:hidden mt-5">
@@ -88,15 +96,11 @@ const Header = ({ handleWorkScroll, handleContactScroll, isBlog }) => {
           </>
         )}
       </Popover>
-      <div
-        className={`mt-10 hidden flex-row items-center justify-between sticky ${
-          theme === "light" && "bg-white"
-        } dark:text-white top-0 z-10 tablet:flex`}
-      >
+      <div className={headerClasses}>
 
         {!isBlog ? (
           <div className="flex">
-            <Button onClick={handleWorkScroll}>Work</Button>
+            <Button onClick={handleWorkScroll}>Projects</Button>
             {showResume && (
               <Button
                 onClick={() => router.push("/resume")}

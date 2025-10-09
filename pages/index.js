@@ -1,7 +1,6 @@
 import { useRef } from "react";
 import Header from "../components/Header";
 import ServiceCard from "../components/ServiceCard";
-import Socials from "../components/Socials";
 import WorkCard from "../components/WorkCard";
 import { useIsomorphicLayoutEffect } from "../utils";
 import { stagger } from "../animations";
@@ -89,10 +88,10 @@ export default function Home() {
             </h1>
           </div>
 
-          <Socials className="mt-2 laptop:mt-5" />
         </div>
         <div className="mt-10 laptop:mt-30 p-2 laptop:p-0" ref={workRef}>
           <h1 className="text-2xl text-bold">Projects</h1>
+          <h2 className="text-xl text-bold">Here are some of my favorite projects i've beeen working on</h2>
 
           <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
             {data.projects.map((project) => (
@@ -103,6 +102,7 @@ export default function Home() {
                 description={project.description}
                 onClick={() => window.open(project.url)}
               />
+            
             ))}
           </div>
         </div>

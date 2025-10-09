@@ -1,7 +1,6 @@
 {
-  "name": "Hugo",
   "headerTaglineOne": "Hello 👋",
-  "headerTaglineTwo": "I'm Hugo Martins",
+  "headerTaglineTwo": "I'm Hugo",
   "headerTaglineThree": "student developer",
   "headerTaglineFour": " at HETIC, Montreuil.",
   "showCursor": true,
@@ -27,25 +26,25 @@
   ],
   "projects": [
     {
-      "id": "1",
-      "title": "Project One Test",
-      "description": "Web Design",
-      "imageSrc": "https://images.unsplash.com/photo-1487837647815-bbc1f30cd0d2?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60",
-      "url": "http://chetanverma.com/"
+      "id": "BRQU",
+      "title": "BRQU (BrowserQuest Updated)",
+      "description": "Reimplementation of a legacy multiplayer browser game that was no longer functional, featuring a failover system and server management through Nginx.",
+      "imageSrc": "images\\Browserquest.webp",
+      "url": "https://github.com/AkaTFL/BRQU"
     },
     {
-      "id": "2",
-      "title": "Project Two",
-      "description": "Web Development",
-      "imageSrc": "https://images.unsplash.com/photo-1605153864431-a2795a1b2f95?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60",
-      "url": "http://chetanverma.com/"
+      "id": "Park-IA",
+      "title": "Park-IA",
+      "description": "AI-powered parking assistant that analyzes real-time CCTV footage to detect available spots and suggest the closest parking areas to a user's destination.",
+      "imageSrc": "images\\Park-IA.webp",
+      "url": "https://github.com/AkaTFL/Park-IA"
     },
     {
-      "id": "3",
-      "title": "Project Three",
-      "description": "Design",
-      "imageSrc": "https://images.unsplash.com/photo-1504083898675-c896ecdae86e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60",
-      "url": "http://chetanverma.com/"
+      "id": "Fyt",
+      "title": "Fyt",
+      "description": "A rudimentary Python-based system similar to Gyt, featuring a command that rickrolls you and puts your computer to sleep 😆.",
+      "imageSrc": "images\\Fyt.webp",
+      "url": "https://github.com/Freeky-inc/hetic_git"
     },
     {
       "id": "4",
@@ -88,7 +87,7 @@
     {
       "id": "4",
       "title": "3D Design",
-      "description": "We combine creative design and technical skills to build striking 3D visualisations that bring your project to life."
+      "description": "Thanks to Blender, i'm learning to make 3D models"
     }
   ],
   "aboutpara": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
@@ -100,15 +99,8 @@
         "id": "1",
         "dates": "May 2021 - July 2021",
         "type": "Internship",
-        "position": "Frontend Engineer at X",
-        "bullets": "Bullet One, Bullet Two"
-      },
-      {
-        "id": "d495c23b-4f65-479a-9b8a-cfbc1c089725",
-        "dates": "July 2020 - March 2022",
-        "type": "Full Time",
-        "position": "Frontend Engineer at X",
-        "bullets": "Worked on the frontend of a React application, Worked on the frontend of a React application"
+        "position": "Full Stack Developer at GEH Services",
+        "bullets": "As a Full Stack Developer, I worked on an internal web application designed for all employees across the company. The project aimed to streamline daily operations and improve internal communication by providing an intuitive interface and custom features tailored to the team’s specific needs."
       }
     ],
     "education": [
