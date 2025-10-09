@@ -6,9 +6,8 @@ import ProjectResume from "../components/ProjectResume";
 import Socials from "../components/Socials";
 import { useTheme } from "next-themes";
 // Data
-import { name, showResume } from "../data/portfolio.json";
-import { resume } from "../data/portfolio.json";
 import data from "../data/portfolio.json";
+const { name, showResume, resume } = data;
 
 const Resume = () => {
   const router = useRouter();

@@ -2,6 +2,7 @@ import { Popover } from "@headlessui/react";
 import { useTheme } from "next-themes";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 import Button from "../Button";
 // Local Data
 import data from "../../data/portfolio.json";
@@ -38,18 +39,22 @@ const Header = ({ handleWorkScroll, handleContactScroll, isBlog }) => {
                       setTheme(theme === "dark" ? "light" : "dark")
                     }
                   >
-                    <img
-                      className="h-6"
+                    <Image
+                      width={24}
+                      height={24}
+                      alt={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
                       src={`/images/${
                         theme === "dark" ? "moon.svg" : "sun.svg"
                       }`}
-                    ></img>
+                    />
                   </Button>
                 )}
 
                 <Popover.Button>
-                  <img
-                    className="h-5"
+                  <Image
+                    width={20}
+                    height={20}
+                    alt="Menu"
                     src={`/images/${
                       !open
                         ? theme === "dark"
@@ -59,7 +64,7 @@ const Header = ({ handleWorkScroll, handleContactScroll, isBlog }) => {
                         ? "cancel.svg"
                         : "cancel-white.svg"
                     }`}
-                  ></img>
+                  />
                 </Popover.Button>
               </div>
             </div>
@@ -117,10 +122,12 @@ const Header = ({ handleWorkScroll, handleContactScroll, isBlog }) => {
               <Button
                 onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               >
-                <img
-                  className="h-6"
+                <Image
+                  width={24}
+                  height={24}
+                  alt={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
                   src={`/images/${theme === "dark" ? "moon.svg" : "sun.svg"}`}
-                ></img>
+                />
               </Button>
             )}
           </div>
@@ -132,10 +139,12 @@ const Header = ({ handleWorkScroll, handleContactScroll, isBlog }) => {
               <Button
                 onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               >
-                <img
-                  className="h-6"
+                <Image
+                  width={24}
+                  height={24}
+                  alt={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
                   src={`/images/${theme === "dark" ? "moon.svg" : "sun.svg"}`}
-                ></img>
+                />
               </Button>
             )}
           </div>

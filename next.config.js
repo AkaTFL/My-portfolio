@@ -3,7 +3,12 @@ const nextConfig = {
   reactStrictMode: true,
   outputFileTracingRoot: __dirname,
   images: {
-    domains: ['images.unsplash.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+      },
+    ],
   },
 }
 

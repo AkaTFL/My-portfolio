@@ -1,12 +1,15 @@
 import { useRef } from "react";
+import dynamic from "next/dynamic";
 import Header from "../components/Header";
-import ServiceCard from "../components/ServiceCard";
-import WorkCard from "../components/WorkCard";
 import { useIsomorphicLayoutEffect } from "../utils";
 import { stagger } from "../animations";
-import Footer from "../components/Footer";
 import Head from "next/head";
 import Cursor from "../components/Cursor";
+
+// Dynamic imports for below-the-fold components
+const WorkCard = dynamic(() => import("../components/WorkCard"));
+const ServiceCard = dynamic(() => import("../components/ServiceCard"));
+const Footer = dynamic(() => import("../components/Footer"));
 
 // Local Data
 import data from "../data/portfolio.json";
@@ -94,12 +97,13 @@ export default function Home() {
           <h2 className="text-xl text-bold">Here are some of my favorite projects I&apos;ve been working on</h2>
 
           <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
-            {data.projects.map((project) => (
+            {data.projects.map((project, index) => (
               <WorkCard
                 key={project.id}
                 img={project.imageSrc}
                 name={project.title}
                 description={project.description}
+                priority={index === 0}
                 onClick={() => window.open(project.url)}
               />
             

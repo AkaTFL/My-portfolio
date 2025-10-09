@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 
 const WorkCard = ({ img, name, description, onClick }) => {
@@ -14,9 +13,11 @@ const WorkCard = ({ img, name, description, onClick }) => {
         <Image
           alt={name}
           src={img}
-          layout="fill"
-          objectFit="cover"
-          className="hover:scale-110 transition-all ease-out duration-300"
+          fill
+          loading="lazy"
+          fetchPriority="high"
+          sizes="(min-width: 1024px) 600px, 100vw"
+          className="object-cover hover:scale-110 transition-all ease-out duration-300"
         />
       </div>
       <h1 className="mt-5 text-3xl font-medium">
