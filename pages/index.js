@@ -103,8 +103,8 @@ export default function Home() {
 
         </div>
         <div className="mt-10 laptop:mt-30 p-2 laptop:p-0" ref={workRef}>
-          <h1 className="text-2xl text-bold">Projects</h1>
-          <h2 className="text-xl text-bold">Here are some of my favorite projects I&apos;ve been working on</h2>
+          <h1 className="text-3xl">PROJECTS</h1>
+          <h2 className="text-xl">Here are some of my favorite projects I&apos;ve been working on</h2>
 
           <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
             {data.projects.map((project, index) => (

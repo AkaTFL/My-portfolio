@@ -21,14 +21,14 @@ const Header = ({ handleWorkScroll, handleContactScroll, handleResumeScroll, isB
   const headerClasses = [
     "mt-10 hidden flex-row items-center justify-between sticky top-0 z-10 tablet:flex",
     "dark:text-white",
-    mounted && theme === "light" && "bg-white",
+    mounted && theme === "light" ? "bg-white" : "bg-[rgb(18,18,18)]", // Adapte la couleur de fond au thème
   ]
     .filter(Boolean)
     .join(" ");
 
   return (
     <>
-      <Popover className="block tablet:hidden mt-5">
+      <Popover className="block mt-5">
         {({ open }) => (
           <>
             <div className="flex items-center justify-between p-2 laptop:p-0">
