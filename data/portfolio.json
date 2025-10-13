@@ -2,7 +2,7 @@
   "name": "Hugo",
   "headerTaglineOne": "Hello 👋",
   "headerTaglineTwo": "I'm Hugo",
-  "headerTaglineThree": "student developer",
+  "headerTaglineThree": "a student developer",
   "headerTaglineFour": " at HETIC, Montreuil.",
   "showCursor": true,
   "showBlog": false,
@@ -38,7 +38,7 @@
       "title": "Park-IA",
       "description": "AI-powered parking assistant that analyzes real-time CCTV footage to detect available spots and suggest the closest parking areas to a user's destination.",
       "imageSrc": "/images/Park-IA.webp",
-      "url": "https://github.com/AkaTFL/Park-IA"
+      "url": "https://github.com/Freeky-Inc/Park-IA"
     },
     {
       "id": "Fyt",

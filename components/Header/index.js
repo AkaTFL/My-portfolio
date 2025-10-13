@@ -1,13 +1,13 @@
 import { Popover } from "@headlessui/react";
 import { useTheme } from "next-themes";
 import { useRouter } from "next/router";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Button from "../Button";
 // Local Data
 import data from "../../data/portfolio.json";
 
-const Header = ({ handleWorkScroll, handleContactScroll, isBlog }) => {
+const Header = ({ handleWorkScroll, handleContactScroll, handleResumeScroll, isBlog }) => {
   const router = useRouter();
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
@@ -73,30 +73,6 @@ const Header = ({ handleWorkScroll, handleContactScroll, isBlog }) => {
                 theme === "dark" ? "bg-slate-800" : "bg-white"
               } shadow-md rounded-md`}
             >
-              {!isBlog ? (
-                <div className="grid grid-cols-1">
-                  <Button onClick={handleWorkScroll}>Work</Button>
-                  <Button onClick={handleContactScroll}>Contact</Button>
-
-                  <Button
-                    onClick={() => window.open("mailto:hugomartins1028@yahoo.com")}
-                  >
-                    Contact
-                  </Button>
-                </div>
-              ) : (
-                <div className="grid grid-cols-1">
-                  <Button onClick={() => router.push("/")} classes="first:ml-1">
-                    Home
-                  </Button>
-
-                  <Button
-                    onClick={() => window.open("mailto:hugomartins1028@yahoo.com")}
-                  >
-                    Contact
-                  </Button>
-                </div>
-              )}
             </Popover.Panel>
           </>
         )}
@@ -107,10 +83,7 @@ const Header = ({ handleWorkScroll, handleContactScroll, isBlog }) => {
           <div className="flex">
             <Button onClick={handleWorkScroll}>Projects</Button>
             {showResume && (
-              <Button
-                onClick={() => router.push("/resume")}
-                classes="first:ml-1"
-              >
+              <Button onClick={handleResumeScroll}>
                 Resume
               </Button>
             )}
