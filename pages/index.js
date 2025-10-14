@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import Header from "../components/Header";
 import { useIsomorphicLayoutEffect } from "../utils";
@@ -23,6 +23,9 @@ export default function Home() {
   const textTwo = useRef();
   const textThree = useRef();
   const textFour = useRef();
+  
+  // State pour gérer l'affichage du cursor
+  const [showCursor, setShowCursor] = useState(data.showCursor);
 
   // Handling Scroll
   const handleWorkScroll = () => {
@@ -57,9 +60,24 @@ export default function Home() {
     );
   }, []);
 
+  // Gérer l'affichage du cursor selon la taille de l'écran
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setShowCursor(false);
+      } else {
+        setShowCursor(data.showCursor);
+      }
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
-    <div className={`relative ${data.showCursor && "cursor-none"}`}>
-      {data.showCursor && <Cursor />}
+    <div className={`relative ${showCursor && "cursor-none"}`}>
+      {showCursor && <Cursor />}
       <Head>
         <title>{data.name}</title>
       </Head>
