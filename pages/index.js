@@ -63,7 +63,7 @@ export default function Home() {
   // Gérer l'affichage du cursor selon la taille de l'écran
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 768) {
+      if (window.innerWidth < 770) {
         setShowCursor(false);
       } else {
         setShowCursor(data.showCursor);

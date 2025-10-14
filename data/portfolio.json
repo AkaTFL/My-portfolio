@@ -106,11 +106,14 @@
     ],
     "languages": [
       "Javascript",
-      "HTML5",
+      "HTML",
       "CSS",
       "Python",
       "Java",
-      "Cobol"
+      "Cobol",
+      "C++",
+      "PHP",
+      "SQL"
     ],
     "frameworks": [
       "React",
@@ -125,7 +128,10 @@
       "Blender",
       "Canva",
       "Ollama",
-      "AnythingLLM"
+      "AnythingLLM",
+      "Git",
+      "VSCode",
+      "Figma"
     ]
   }
 }
