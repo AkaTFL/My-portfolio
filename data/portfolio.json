@@ -48,11 +48,11 @@
       "url": "https://github.com/Freeky-inc/hetic_git"
     },
     {
-      "id": "4",
-      "title": "Project Four",
-      "description": "Marketing",
+      "id": "Roller-Paper-Tycoon",
+      "title": "Roller Paper Tycoon",
+      "description": "RollerPaperTycon is a blockchain clicker game where players unroll virtual toilet paper to earn tokens and buy skins. Built with TypeScript and Solidity, it’s a student project exploring blockchain integration in simple web games.",
       "imageSrc": "https://images.unsplash.com/photo-1492171983775-a51717616c0d?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60",
-      "url": "http://chetanverma.com/"
+      "url": "https://github.com/Oomaxime/RollerPaperTycon"
     }
   ],
   "services": [
